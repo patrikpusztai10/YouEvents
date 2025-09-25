@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#4f90ff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/box"
+        android:layout_width="343dp"
+        android:layout_height="596dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="576dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:fontFamily="@font/ubuntu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.03" />
+
+            <EditText
+                android:id="@+id/enteremail"
+                android:layout_width="312dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Email"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.404" />
+
+            <EditText
+                android:id="@+id/enterorg"
+                android:layout_width="312dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:inputType="text"
+                android:hint="Organisation name"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterpassword"
+                app:layout_constraintVertical_bias="0.629" />
+
+            <EditText
+                android:id="@+id/enterusername"
+                android:layout_width="312dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:inputType="text"
+                android:hint="Username"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enteremail"
+                app:layout_constraintVertical_bias="0.127" />
+
+            <EditText
+                android:id="@+id/enterpassword"
+                android:layout_width="312dp"
+                android:layout_height="48dp"
+                android:ems="10"
+                android:fontFamily="@font/ubuntu"
+                android:hint="Password"
+                android:inputType="text"
+                android:password="true"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/enterusername"
+                app:layout_constraintVertical_bias="0.161" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="144dp"
+                android:layout_height="73dp"
+                android:text="Register"
+                android:textColor="#212121"
+                android:textSize="18dp"
+                android:fontFamily="@font/ubuntu"
+                app:backgroundTint="#4f90ff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.915" />
+
+            <RadioGroup
+
+                android:id="@+id/radioGroup"
+                android:layout_width="309dp"
+                android:layout_height="55dp"
+                android:fontFamily="@font/ubuntu"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/enteremail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.855">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendee"
+                    android:fontFamily="@font/ubuntu"
+                    app:buttonTint="@color/radiobutton"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.093"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    app:layout_constraintVertical_bias="0.357" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="204dp"
+                    android:layout_height="55dp"
+                    android:checked="true"
+                    android:fontFamily="@font/ubuntu"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="24dp"
+                    app:buttonTint="@color/radiobutton"
+                    android:text="Event representative"
+                    android:textSize="16dp"
+                    app:layout_constraintBottom_toTopOf="@+id/enteremail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.093"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="As a/an:"
+                android:textSize="18dp"
+                android:fontFamily="@font/ubuntu"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.004"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.707" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

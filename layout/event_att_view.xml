@@ -1,0 +1,99 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/eventTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Title...."
+            android:layout_marginLeft="5dp"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:id="@+id/eventImage"
+            android:layout_width="292dp"
+            android:layout_height="167dp"
+            android:layout_below="@id/eventTitle"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventImage"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Date...."
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eventLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventDate"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Loc...."
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eventDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/eventLoc"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="Description...."
+            android:textSize="20sp"
+             />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/star_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/radiobutton"
+            android:clickable="true"
+            app:tint="@color/cardview_dark_background"
+            android:contentDescription="Like button"
+            app:maxImageSize="33dp"
+            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/star_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@color/radiobutton"
+            android:clickable="true"
+            app:tint="#ffe234"
+            android:visibility="gone"
+            android:contentDescription="Like button"
+            app:maxImageSize="33dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

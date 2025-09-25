@@ -1,0 +1,40 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:elevation="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/recyclerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title...."
+            android:fontFamily="@font/ubuntu"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/recyclerImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@id/recyclerTitle"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" />
+        <TextView
+            android:id="@+id/recyclerInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="People interested...."
+            android:fontFamily="@font/ubuntu"
+            android:layout_below="@id/recyclerImage"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
