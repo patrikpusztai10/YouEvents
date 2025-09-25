@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HomeworkProject</string>
+    <string name="query_hint">Search for local events...</string>
+</resources>
